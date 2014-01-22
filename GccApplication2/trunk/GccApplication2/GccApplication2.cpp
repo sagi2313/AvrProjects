@@ -7,7 +7,6 @@
 
 
 #include <avr/io.h>
-#include <stdio.h>
 volatile unsigned long lng=0;
 
 int main(void)
@@ -16,11 +15,8 @@ char p=11;
     while(1)
     {
         lng++;
-		if(p + lng)
-		{
-		p++;
-		printf("%ld",lng);
-		}
+		if(p + lng)p++;
+		
 		//TODO:: Please write your application code 
     }
 }
