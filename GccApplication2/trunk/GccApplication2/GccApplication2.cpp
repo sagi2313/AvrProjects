@@ -8,10 +8,15 @@
 
 #include <avr/io.h>
 volatile unsigned long lng=0;
+
 int main(void)
 {
+char p=11;
     while(1)
     {
-        lng++;//TODO:: Please write your application code 
+        lng++;
+		if(p + lng)p++;
+		
+		//TODO:: Please write your application code 
     }
 }
