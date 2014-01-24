@@ -7,6 +7,7 @@
 
 
 #include <avr/io.h>
+#include "cCompilerVitals.h"
 volatile unsigned long lng=0;
 
 int main(void)
