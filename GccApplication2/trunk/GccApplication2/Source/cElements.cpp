@@ -8,12 +8,4 @@
 
 #include "cElements.h"
 
-// default constructor
-cElements::cElements()
-{
-} //cElements
 
-// default destructor
-cElements::~cElements()
-{
-} //~cElements
