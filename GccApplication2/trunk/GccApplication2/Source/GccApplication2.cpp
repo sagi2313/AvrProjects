@@ -13,7 +13,6 @@ void * operator new(size_t size)
 {
 	return malloc(size);
 }
-
 void operator delete(void * ptr)
 {	
 	free(ptr);
@@ -23,13 +22,11 @@ void * operator new[](size_t size)
 {
 	return malloc(size);
 }
-
 void operator delete[](void * ptr)
 {
 	free(ptr);
 }
 __extension__ typedef int __guard __attribute__((mode (__DI__)));
-
 extern "C" int __cxa_guard_acquire(__guard *);
 extern "C" void __cxa_guard_release (__guard *);
 extern "C" void __cxa_guard_abort (__guard *);
@@ -60,14 +57,16 @@ private:
 	cPoint ul;
 	cPoint dr;
 };
-class Circle {
+class Circle 
+{
 	double radius;
 	public:
 	Circle(double r) : radius(r) { }
 	double area() {return radius*radius*3.14159265;}
 };
 
-class Cylinder {
+class Cylinder 
+{
 	Circle base;
 	double height;
 	public:
@@ -79,7 +78,7 @@ volatile static int a;
 volatile long* p;
 union lf
 {
- float f;
+float f;
 long p;	
 }lf1;
 int main(void)
